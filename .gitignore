@@ -1,0 +1,41 @@
+# --- Python & Environment ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env
+.venv/
+
+# --- Jupyter Notebooks ---
+# We want to keep the .ipynb, but ignore the auto-save checkpoints
+.ipynb_checkpoints/
+
+# --- Project Data (CRITICAL) ---
+# Ignore the raw audio database and csv files
+data/
+*.wav
+*.mp3
+*.zip
+
+# --- Generated/Processed Data ---
+# Ignore the cached tensor files created during preprocessing
+processed_tensors/
+*.npy
+*.npz
+
+# --- Trained Models ---
+# Do not upload large model weight files
+*.pth
+*.pt
+*.h5
+*.pkl
+
+# Specifically your saved model
+respin_net_model.pth
+
+# --- IDE & OS Settings ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

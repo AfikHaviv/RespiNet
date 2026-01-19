@@ -1,0 +1,24 @@
+# --- Jupyter & Core ---
+jupyter
+notebook
+ipykernel
+
+# --- Data Manipulation ---
+numpy
+pandas
+scikit-learn
+
+# --- Audio Processing (Crucial) ---
+librosa
+soundfile
+resampy
+
+# --- Visualization ---
+matplotlib
+seaborn
+
+# --- Deep Learning (PyTorch Ecosystem) ---
+torch
+torchvision
+torchaudio
+tqdm
