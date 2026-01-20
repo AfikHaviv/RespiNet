@@ -26,13 +26,56 @@ Respiratory diseases (COPD, Pneumonia, Bronchiectasis) are a leading cause of mo
 
 ## 📊 Results & Performance
 
+### 📈 Training Progression
+The model showed rapid convergence. While there was initial instability (high loss variance in early epochs), the model stabilized significantly after Epoch 8.
+
+| Stage | Epoch | Train Loss | Val Loss | Val Accuracy |
+| :--- | :---: | :---: | :---: | :---: |
+| **Initial** | 1 | 0.4576 | 0.5452 | 72.30% |
+| **Best Model** 🏆 | 9 | 0.0622 | 0.1516 | **95.55%** |
+| **Final** | 25 | 0.0381 | 0.1904 | 94.92% |
+
+<details>
+<summary><strong>Click here to see the full training log (25 Epochs)</strong></summary>
+
+| Epoch | Train Loss | Val Loss | Val Acc |
+| :---: | :---: | :---: | :---: |
+| 1 | 0.4576 | 0.5452 | 72.30% |
+| 2 | 0.2317 | 0.8437 | 60.61% |
+| 3 | 0.1651 | 0.1758 | 93.27% |
+| 4 | 0.1248 | 1.1282 | 59.97% |
+| 5 | 0.1103 | 0.3416 | 88.18% |
+| 6 | 0.1123 | 0.2476 | 92.25% |
+| 7 | 0.0770 | 1.2437 | 60.74% |
+| 8 | 0.0768 | 0.1954 | 94.16% |
+| 9 | 0.0622 | 0.1516 | 95.55% |
+| 10 | 0.0568 | 0.1588 | 95.43% |
+| 11 | 0.0479 | 0.1589 | 95.04% |
+| 12 | 0.0356 | 0.1804 | 95.30% |
+| 13 | 0.0347 | 0.2017 | 94.28% |
+| 14 | 0.0346 | 0.1906 | 94.54% |
+| 15 | 0.0419 | 0.1845 | 94.92% |
+| 16 | 0.0366 | 0.1864 | 94.92% |
+| 17 | 0.0462 | 0.1907 | 94.79% |
+| 18 | 0.0320 | 0.1938 | 94.79% |
+| 19 | 0.0427 | 0.1908 | 94.79% |
+| 20 | 0.0404 | 0.1911 | 95.17% |
+| 21 | 0.0442 | 0.1887 | 94.92% |
+| 22 | 0.0371 | 0.1878 | 94.92% |
+| 23 | 0.0532 | 0.1884 | 95.17% |
+| 24 | 0.0380 | 0.1858 | 94.79% |
+| 25 | 0.0381 | 0.1904 | 94.92% |
+
+</details>
+
+### 📊 Final Evaluation Metrics
 We evaluated the model on a strictly held-out validation set.
 
 | Metric | Score | Meaning |
 | :--- | :--- | :--- |
 | **Accuracy** | **94%** | Overall correctness on unseen data. |
 | **Sensitivity (Recall)** | **98%** | The model almost never misses a sick patient (Crucial for screening). |
-| **AUC Score** | **0.97** | Excellent capability to separate Healthy vs. Pathological classes. |
+| **F1-Score** | **0.97** | The model is extremely good at correctly identifying sick patients. |
 
 ---
 
